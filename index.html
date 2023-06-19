@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Administrador de Pacientes</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <h2 class="text-center my-5 titulo">World2Fly! </h2>
+    <h3 class="subtitulo">Su aerolinea de confianza</h3>
+    <div class="container mt-5 p-5">
+        <div id="contenido" class="row">
+            <div class="col-md-6 agregar-cita">
+                <form id="nueva-cita">
+                    <legend class="mb-4 font-weight-bold">Datos del viaje</legend>
+                    <div class="form-group row">
+                        <label class="col-sm-4 col-lg-4 col-form-label font-weight-bold">Nombre del Pasajero:</label>
+                        <div class="col-sm-8 col-lg-8">
+                            <input type="text" id="Nombre" name="Nombre" class="form-control" placeholder="Nombre del Pasajero">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-sm-4 col-lg-4 col-form-label font-weight-bold">Apellido del Pasajero:</label>
+                        <div class="col-sm-8 col-lg-8">
+                            <input type="text" id="Apellido" name="Apellido" class="form-control"  placeholder="Apellido del Pasajero">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-sm-4 col-lg-4 col-form-label font-weight-bold">Numero de vuelo:</label>
+                        <div class="col-sm-8 col-lg-8">
+                            <input type="text" id="Numerodevuelo" name="Numerodevuelo" class="form-control"  placeholder="Numero de vuelo">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-sm-4 col-lg-4 col-form-label font-weight-bold">Teléfono:</label>
+                        <div class="col-sm-8 col-lg-8">
+                            <input type="tel" id="telefono" name="telefono" class="form-control"  placeholder="Número de Teléfono">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-sm-4 col-lg-4 col-form-label font-weight-bold">Lugar de origen:</label>
+                        <div class="col-sm-8 col-lg-8">
+                            <input type="text" id="Lugardeorigen" name="Lugardeorigen" class="form-control"  placeholder="Lugar de origen">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-sm-4 col-lg-4 col-form-label font-weight-bold">Destino</label>
+                        <div class="col-sm-8 col-lg-8">
+                            <input type="text" id="Destino" name="Destino" class="form-control"  placeholder="Destino">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label class="col-sm-4 col-lg-4 col-form-label font-weight-bold">Fecha:</label>
+                        <div class="col-sm-8 col-lg-8">
+                            <input type="date" id="fecha" name="fecha" class="form-control">
+                        </div>
+                    </div>
+
+                    <div class="form-group row">
+                        <label class="col-sm-4 col-lg-4 col-form-label font-weight-bold">Hora:</label>
+                        <div class="col-sm-8 col-lg-8">
+                            <input type="time" id="hora" name="hora" class="form-control">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                            <button type="submit" class="btn btn-success w-100 d-block">Agendar Vuelo</button>
+                    </div>
+                </form>
+            </div>
+            <div class="col-md-6">
+                <h2 id="administra" class="mb-4 font-weight-bold">Resumen de viaje</h2>
+                <ul id="citas" class="list-group lista-citas"></ul>
+            </div>
+        </div> <!--.row-->
+    </div><!--.container-->
+    <video muted autoplay loop>
+        <source src="./video/pexels-kelly-3701075-1920x1080-24fps.mp4" type="video/mp4">
+    </video>
+    <div class="capa"></div>
+    <script src="js/citas.js"></script>
+
+</body>
+</html>
